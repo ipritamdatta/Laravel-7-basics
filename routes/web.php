@@ -35,3 +35,5 @@ Route::get('/test','TestController@index');
 // session
 
 Route::get('/session/get','SessionController@getSessionData');
+Route::get('/session/set','SessionController@storeSessionData');
+Route::get('/session/remove','SessionController@deleteSessionData');
