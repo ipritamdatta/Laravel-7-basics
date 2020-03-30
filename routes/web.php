@@ -12,8 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// Component
 Route::get('/','HomeController@index');
+
+// Http Client
 
 // index
 Route::get('/posts','ClientController@getAllPosts');
@@ -25,3 +27,7 @@ Route::get('/add-post','ClientController@addPost');
 Route::get('/update-post','ClientController@updatePost');
 // delete
 Route::get('/delete-post/{id}','ClientController@deletePost');
+
+// Fluent String
+
+Route::get('/test','TestController@index');
