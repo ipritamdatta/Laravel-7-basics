@@ -31,3 +31,7 @@ Route::get('/delete-post/{id}','ClientController@deletePost');
 // Fluent String
 
 Route::get('/test','TestController@index');
+
+// session
+
+Route::get('/session/get','SessionController@getSessionData');
